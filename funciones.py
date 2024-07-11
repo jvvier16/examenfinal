@@ -18,7 +18,13 @@ def opc_1():
         sueldos.append(aleatorio)
         trabajador_sueldo.append(lol)
 def opc_2():
-    print(trabajador_sueldo)
+    sueldos.sort
+    print("sueldo entre 300.000 a 1.300.000")
+    if sueldos >1300000:
+        print(sueldos)
+    else:
+        print("mayores a 1.300.000")
+        print(sueldos)
 def opc_3():
     sueldos.sort
     print("sueldo menor",sueldos[0])
@@ -30,7 +36,9 @@ def opc_3():
     print("medida geometrica",media)
 def opc_4():
     import csv
-    
+    nombre_archivo = input("que nombre le dara al archivo:")
+    with(nombre_archivo,"csv","","e"):
+      print("archivo creado")  
     for x in range(9):
         print("nombre          sueldo      desvuento salud            descuento afp               sueldo bruto    ")
         print(trabajadores[x], sueldos[x], descuentos=sueldos[x]*0.12,descuentoa= sueldos[x]*0.07,sueldof=sueldos[x]*0.19)
@@ -38,3 +46,4 @@ def opc_5():
     print("finalisando programa")
     print("desarollador",nombred)
     print("rut",rutd)
+    time.sleep(3)
